@@ -16,5 +16,13 @@
         "psr-4": {
             "DIU\\Neos\\PWA\\": "Classes"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "DIU\\Neos\\PWA\\Composer\\InstallerScripts::postInstallCreateFile"
+        ],
+        "post-update-cmd": [
+            "DIU\\Neos\\PWA\\Composer\\InstallerScripts::postInstallCreateFile"
+        ]
     }
 }
